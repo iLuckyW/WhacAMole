@@ -1,6 +1,6 @@
 Vue.component('mole', {
     template: `
-    <div v-on:click="hit">{{ visual }}</div>
+    <a v-on:click="hit">{{ visual }}</a>
     `,
     data() {
         return {
@@ -33,4 +33,12 @@ Vue.component('mole', {
 
 var game = new Vue({
     el: '#game',
+    data: {
+        points: 0
+    },
+    methods: {
+        incrementPoints: function() {
+            this.points += 1;
+        }
+    }
 })

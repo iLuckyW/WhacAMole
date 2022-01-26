@@ -7,10 +7,11 @@
     <body>
 
         <div id="game">
-            <mole></mole>
-            <mole></mole>
-            <mole></mole>
-            <mole></mole>
+            <div class='points'>
+                <p>Punkte: ({{ points }})</p>
+            </div>
+            <mole @successful-hit="incrementPoints"></mole>
+
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
