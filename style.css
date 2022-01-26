@@ -1,3 +1,16 @@
-.game {
-    display: grid
+.playground {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+}
+
+.field {
+    background-color: green;
+    width: 100px;
+    height: 100px
+}
+
+.mole {
+    background-color: black;
 }

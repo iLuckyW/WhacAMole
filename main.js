@@ -1,44 +1,27 @@
-Vue.component('mole', {
-    template: `
-    <a v-on:click="hit">{{ visual }}</a>
-    `,
-    data() {
-        return {
-            selectedVariant: 1,
-            variants: [
-                {
-                    variantText: 'O'
-                },
-                {
-                    variantText: 'X'
-                }
-            ]
-        }
-    },
-    methods: {
-        hit: function() {
-            if (this.selectedVariant != 0) {
-                this.$emit('successful-hit')
-            }
-            this.selectedVariant = 0
-        }
-    },
-    computed: {
-        visual() {
-            return this.variants[this.selectedVariant].variantText
-        }
-    }
-})
+let fields = document.querySelectorAll(".field")
+let moleIndex = 0;
 
+setInterval("moveMole()", 2000)
 
-var game = new Vue({
-    el: '#game',
-    data: {
-        points: 0
-    },
-    methods: {
-        incrementPoints: function() {
-            this.points += 1;
-        }
+function moveMole() {
+    x = getRandomInt(8)
+
+    if (moleIndex == x) {
+        setMole(8)
+    } else {
+        setMole(x)
     }
-})
+}
+
+function setMole(index) {
+    fields[moleIndex].classList.remove('mole')
+
+    if (index < fields.length && index >= 0) {
+        moleIndex = index
+        fields[index].classList.add('mole')
+    }
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}

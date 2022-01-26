@@ -5,16 +5,21 @@
         <link rel="stylesheet" text="text/css" href="style.css"> 
     </head>
     <body>
-
-        <div id="game">
-            <div class='points'>
-                <p>Punkte: ({{ points }})</p>
-            </div>
-            <mole @successful-hit="incrementPoints"></mole>
-
+        <div class='points'>
+            <p>Punkte: </p>
+        </div>
+        <div class='playground'>
+            <div class='field' id='1'></div>
+            <div class='field'></div>
+            <div class='field'></div>
+            <div class='field'></div>
+            <div class='field'></div>
+            <div class='field'></div>
+            <div class='field'></div>
+            <div class='field'></div>
+            <div class='field'></div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script src="main.js"></script>
     </body>
 </html>
