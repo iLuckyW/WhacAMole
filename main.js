@@ -39,7 +39,7 @@ function tick() {
         }
 
         counter += 1;
-        document.getElementById("sec").innerHTML = 15.0 - (counter * 0.3)
+        document.getElementById("sec").innerHTML = Math.round((15.0 - (counter * 0.3)) * 100) / 100
     } else {
         setMole(-1)
     }
