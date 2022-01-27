@@ -1,7 +1,7 @@
 let fields = document.querySelectorAll(".field")
 let moleIndex = 0
 let points = 0
-let counter = 50
+let counter = 100
 
 setInterval("tick()", 300)
 
@@ -26,7 +26,7 @@ document.onclick = function(event) {
 };
 
 function tick() {
-    if (counter < 50) {
+    if (counter < 100) {
         x = getRandomInt(4)
     
         if (x == 0) {
@@ -40,7 +40,7 @@ function tick() {
         }
 
         counter += 1;
-        document.getElementById("sec").innerHTML = Math.round((15.0 - (counter * 0.3)) * 100) / 100
+        document.getElementById("sec").innerHTML = Math.round((30.0 - (counter * 0.3)) * 100) / 100
     } else {
         setMole(-1)
     }
