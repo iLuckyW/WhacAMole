@@ -19,8 +19,9 @@ document.onclick = function(event) {
         document.getElementById("points").innerHTML = points
     }
 
-    if (event.target == ocument.querySelectorAll(".start")) {
-        alert("click")
+    if (event.target == document.getElementById("1")) {
+        points = 0;
+        counter = 0;
     }
 };
 
