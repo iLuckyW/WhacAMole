@@ -10,17 +10,17 @@
 }
 
 .field {
-    background-color: green;
+    background-color: rgb(125, 0, 0);
     width: 50px;
     height: 50px;
 }
 
 .field img {
-    height: 55px;
+    height: 0px;
 }
 
-.mole {
-    background-color: transparent
+.field.mole img {
+    height: 55px;
 }
 
 h1 {
