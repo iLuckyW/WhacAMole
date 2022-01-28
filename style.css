@@ -15,12 +15,8 @@
     height: 50px;
 }
 
-.field img {
-    height: 0px;
-}
-
-.field.mole img {
-    height: 48px;
+.field.mole {
+    background-color: black;
 }
 
 h1 {
