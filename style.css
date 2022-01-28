@@ -6,21 +6,25 @@
     gap: 50px;
     border: 1px solid;
     border-radius: 16px;
-    padding: 16px;
+    padding: 8px;
 }
 
 .field {
     background-color: green;
     width: 50px;
-    height: 50px
+    height: 50px;
+}
+
+.field img {
+    height: 55px;
 }
 
 .mole {
-    background-color: black;
+    background-color: transparent
 }
 
 h1 {
     background-image:linear-gradient(90deg,green,brown,black);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
